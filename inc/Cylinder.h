@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath> 
+#include <iomanip>
 using namespace std;
 
 class Cylinder
@@ -8,13 +9,16 @@ private:
     int radius;
     int height;
 public:
+    Cylinder() : radius(0), height(0) {}
     Cylinder(int r, int h){
         radius = r;
         height = h;
     }
-    void SurfaceArea();
-    void Volume();
-    void Circumference();
+    double SurfaceArea();
+    double Volume();
+    double Circumference();
+    friend istream &operator>>(istream & in, Cylinder & cyl);
+    friend ostream &operator<<(ostream & out, Cylinder & cyl);
 };
 
 
