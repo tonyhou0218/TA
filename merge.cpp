@@ -1,3 +1,0 @@
-AAAAa
-BBB
-BNNNHG

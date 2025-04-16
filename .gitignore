@@ -1,0 +1,24 @@
+# 執行檔與編譯產物
+*.o
+*.exe
+main
+
+# 編譯目錄
+/build/
+/bin/
+
+# 系統雜物
+.DS_Store
+Thumbs.db
+
+# IDE 設定檔
+.vscode/
+.idea/
+
+# Python 虛擬環境
+venv/
+__pycache__/
+*.pyc
+
+# C++特有
+*.out
